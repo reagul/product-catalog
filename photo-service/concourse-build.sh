@@ -9,9 +9,7 @@ set -x # print commands
 # ls -la
 # echo $(date) > bumpme
 #
-# git config --global user.email "reagul@concourse.ci"
-# git config --global user.name "reagul"
-# 
+#
 # git add .
 # git commit -m "Bumped date"
 # ls -la

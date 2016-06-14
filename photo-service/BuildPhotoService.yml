@@ -11,7 +11,7 @@ inputs:
 - name: PhotoServiceRepo1
 
 outputs:
-- name: jar-file
+- name: PhotoServiceRepo1
 
 
 run:
