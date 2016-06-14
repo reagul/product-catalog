@@ -8,7 +8,7 @@ image_resource:
     tag: latest
 
 inputs:
-- name: git-repo
+- name: PhotoServiceRepo1
 
 outputs:
 - name: jar-file
@@ -16,4 +16,4 @@ outputs:
 
 run:
   path: mvn
-  args: ["-f", "git-repo/pom.xml", "-DskipTests=true", "package"]
+  args: ["-f", "PhotoServiceRepo1/pom.xml", "-DskipTests=true", "package"]
