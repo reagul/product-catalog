@@ -37,8 +37,8 @@ public class PhotoServiceController {
 	{
 		return PhotoServiceStub.create(photo);
 		
-		/* Sample JSON 
-		 * Enable "Content-type : application/json"
+		/* Sample POST JSON 
+		 * @@@ Enable "Content-type : application/json" @@@
 		 * {
 		  "id": 4,
 		  "name": "doggiewithball",
@@ -48,18 +48,8 @@ public class PhotoServiceController {
 		}
 		 */
 	}
-	/*
-	@RequestMapping(value = "/postphotourl", method = RequestMethod.POST , consumes="application/json")
-	public void create(@RequestBody String photo)
-	{
-		 //return PhotoServiceStub.create(photo);
-		
-		System.out.println(photo);
-		
-		
-	}**/
 	
-
+	
 	@RequestMapping(value ="getphotourl/{id}",method = RequestMethod.GET)
 	public PhotoService get(@PathVariable long id)	
 	{
