@@ -15,6 +15,7 @@ set -x # print commands
 # ls -la
 # pwd
 # cd ../
-pwd
+ls -la
+tree
 mvn clean package
 cp target/photo-service-0.0.1-SNAPSHOT.jar ../jar-file
