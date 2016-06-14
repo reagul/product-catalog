@@ -28,8 +28,8 @@ jobs:
     trigger: true
 
   - task: Build-PhotoService
-    file: PhotoServiceRepo1/photo-service/BuildPhotoService.yml
+    file: PhotoServiceRepo1/product-catalog/photo-service/BuildPhotoService.yml
 
   - put: PhotoService-CF-Deploy
     params:
-      manifest: PhotoServiceRepo1/photo-service/manifest.yml
+      manifest: PhotoServiceRepo1/product-catalog/photo-service/manifest.yml
