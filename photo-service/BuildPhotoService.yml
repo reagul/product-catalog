@@ -16,4 +16,4 @@ outputs:
 
 run:
   path: mvn
-  args: ["-f", "PhotoServiceRepo1/product-catalog/photo-service/pom.xml", "-DskipTests=true", "package"]
+  args: ["-f", "product-catalog/photo-service/pom.xml", "-DskipTests=true", "package"]
