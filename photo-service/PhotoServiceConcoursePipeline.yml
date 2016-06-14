@@ -12,6 +12,7 @@ resources:
   #params:
     #manifest: manifest.yml
     #path: Concourse1
+    # fly -t lite set-pipeline -p PhotoService -c PhotoServiceConcoursePipeline.yml --load-vars-from  ~/Documents/gitcreds.yml
   source:
     api: {{cf-api}}
     username: {{cf-username}}
