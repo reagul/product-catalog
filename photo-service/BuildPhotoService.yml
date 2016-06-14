@@ -11,11 +11,11 @@ inputs:
 - name: PhotoServiceRepo1
 
 outputs:
-- name: PhotoServiceRepo1
+- name: jar-file
 
 
 run:
   #path: pwd
-  path: mvn
-  args: ["-f", "PhotoServiceRepo1/photo-service/pom.xml", "-DskipTests=true", "package"]
-  #path: PhotoServiceRepo1/photo-service/concourse-build.sh
+  #path: mvn
+  #args: ["-f", "PhotoServiceRepo1/photo-service/pom.xml", "-DskipTests=true", "package"]
+  path: PhotoServiceRepo1/photo-service/concourse-build.sh

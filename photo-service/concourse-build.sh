@@ -16,7 +16,5 @@ set -x # print commands
 # pwd
 # cd ../
 
-echo "test message here"
-ls -la
-pwd
-echo "more msg here"
+mvn clean package
+cp target/photo-service-0.0.1-SNAPSHOT.jar ../jar-file
