@@ -16,6 +16,6 @@ set -x # print commands
 # pwd
 # cd ../
 ls -la
-tree
-mvn -f PhotoServiceRepo1/photo-service/pom.xml clean package 
+
+mvn -f PhotoServiceRepo1/photo-service/pom.xml clean package
 cp target/photo-service-0.0.1-SNAPSHOT.jar ../jar-file
