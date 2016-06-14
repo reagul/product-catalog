@@ -1,0 +1,35 @@
+---
+resources:
+
+- name: PhotoServiceRepo1
+  type: git
+  source:
+    uri: git@github.com:reagul/product-catalog.git
+    private_key: {{github-private-key}}
+    branch: master
+- name: PhotoService-CF-Deploy
+  type: cf
+  #params:
+    #manifest: manifest.yml
+    #path: Concourse1
+  source:
+    api: {{cf-api}}
+    username: {{cf-username}}
+    password: {{cf-password}}
+    organization: {{cf-organization}}
+    space: {{cf-space}}
+    skip_cert_check: true
+jobs:
+- name: Build-PhotoService
+  serial: true
+
+  plan:
+  - get: PhotoServiceRepo1
+    trigger: true
+
+  - task: Build-PhotoService
+    file: PhotoServiceRepo1/ConcourseBuild.yml
+
+  - put: PhotoService-deploy-PCF
+    params:
+      manifest: Concourse1/manifest.yml
