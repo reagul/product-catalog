@@ -34,4 +34,4 @@ jobs:
   - put: PhotoService-CF-Deploy
     params:
       manifest: PhotoServiceRepo1/photo-service/manifest.yml
-      path: /jar-file/photo-service-0.0.1-SNAPSHOT.jar
+      path: target/photo-service-0.0.1-SNAPSHOT.jar
