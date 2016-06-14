@@ -28,7 +28,7 @@ jobs:
   - get: PhotoServiceRepo1
     trigger: true
 
-    - task: Build-PhotoService
+  - task: Build-PhotoService
     file: PhotoServiceRepo1/photo-service/BuildPhotoService.yml
 
   - put: PhotoService-CF-Deploy
