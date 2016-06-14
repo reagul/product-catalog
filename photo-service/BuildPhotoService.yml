@@ -15,7 +15,7 @@ outputs:
 
 
 run:
-  path: pwd
+  #path: pwd
   #path: mvn
   #args: ["-f", "PhotoServiceRepo1/product-catalog/photo-service/pom.xml", "-DskipTests=true", "package"]
-  #path: /photo-service/concourse-build.sh
+  path: PhotoServiceRepo1/photo-service/concourse-build.sh
