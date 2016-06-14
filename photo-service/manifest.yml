@@ -1,6 +1,6 @@
 ---
 applications:
-- name: photo-service
+- name: photo-serviceRJ
   memory: 512M
   instances: 1
   path: target/photo-service-0.0.1-SNAPSHOT.jar
