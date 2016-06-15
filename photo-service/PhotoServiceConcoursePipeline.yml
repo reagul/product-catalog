@@ -10,7 +10,7 @@ resources:
 - name: PhotoService-CF-Deploy
   type: cf
   #params:
-    #manifest: manifest.yml
+    
     #path: Concourse1
     # fly -t lite set-pipeline -p PhotoService -c PhotoServiceConcoursePipeline.yml --load-vars-from  ~/Documents/gitcreds.yml
   source:
