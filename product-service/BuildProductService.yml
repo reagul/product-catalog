@@ -18,4 +18,4 @@ run:
   #path: pwd
   #path: mvn
   #args: ["-f", "ProductServiceRepo1/photo-service/pom.xml", "-DskipTests=true", "package"]
-  path: ProductServiceRepo1/photo-service/concourse-build.sh
+  path: ProductServiceRepo1/product-service/concourse-build.sh
