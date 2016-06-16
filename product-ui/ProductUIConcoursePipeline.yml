@@ -33,5 +33,5 @@ jobs:
 
   - put: ProductUI-CF-Deploy
     params:
-      manifest: ProductUIRepo1/product-UI/manifest.yml
+      manifest: ProductUIRepo1/product-ui/manifest.yml
       path: jar-file/product-ui-0.0.1-SNAPSHOT.jar
